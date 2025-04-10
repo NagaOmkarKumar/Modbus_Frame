@@ -1,0 +1,67 @@
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Executables and Symbols
+*.exe
+*.dll
+*.pdb
+*.app
+*.vshost.exe
+
+# Build Results
+bin/
+obj/
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]ebugFinal/
+[Dd]ebugSymbols/
+[Dd]ebugFiles/
+[Dd]ist/
+[Dd]istFiles/
+[Dd]istFinal/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.userprefs
+*.sln.docstates
+
+# Visual Studio & JetBrains
+.vs/
+.idea/
+.vscode/
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# ReSharper
+_ReSharper*/
+*.cache
+*.ide
+
+# Database
+*.dbmdl
+
+# Logs and Temp
+*.log
+*.bak
+*.tmp
+
+# Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Publish Web Output
+publish/

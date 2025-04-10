@@ -1,0 +1,41 @@
+﻿<Window x:Class="Modbus_Frame.View"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Modbus_Frame"
+        mc:Ignorable="d"
+        Title="Modbus Frame" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel>
+                <!-- TextBox to display incoming data -->
+                <TextBox Name="ReceivedDataTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Width="480" Height="150" IsReadOnly="True" VerticalScrollBarVisibility="Auto"/>
+                <StackPanel Orientation="Horizontal">
+                    <!-- Button to start reading from COM port -->
+                    <Button Name="StartButton" Content="Start Reading" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Width="120" Click="StartButton_Click"/>
+
+                    <!-- Button to stop reading from COM port -->
+                    <Button Name="StopButton" Content="Stop Reading" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,10,0,0" Width="120" Click="StopButton_Click"/>
+
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <RichTextBox Name="Commdata" HorizontalAlignment="Left" Height="150" Margin="10,10,0,0" VerticalAlignment="Top" Width="480"/>
+                            <StackPanel Orientation="Horizontal">
+                            <Button Name="Start" Content="Start" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"  Margin="10,10,0,0" Click="Start_Click"/>
+                            <Button Name="Stop" Content="Stop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="90,10,0,0" Click="Stop_Click"/>
+                                </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                   
+        </Grid>
+   
+</Window>
